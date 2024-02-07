@@ -1,6 +1,6 @@
-# This query retrieves all columns from the log_in_attempts table where the login time is after 18:10 and the login attempts.
-# is unsuccessful (denoted by a value of 0 in the success column). It provides a way to filter and focus on failed login
-# attempts that occurred after the specified time, allowing for further investigation into potential security incidents or anomalies.
+This query retrieves all columns from the log_in_attempts table where the login time is after 18:10 and the login attempts.
+ is unsuccessful (denoted by a value of 0 in the success column). It provides a way to filter and focus on failed login
+ attempts that occurred after the specified time, allowing for further investigation into potential security incidents or anomalies.
 
 
 SELECT *
