@@ -53,7 +53,18 @@ WHERE login_date >= '2022-05-08' AND login_date <= '2022-05-09';
 <summary>The Results:</summary>
 
 
-![SQLQUERY2](https://github.com/AmiliaSalva/Security-Incident-Investigation-After-Hours-Failed-Login-Attempts-Analysis-Using-SQL/assets/132176058/b66b7e33-b7be-43c3-800e-e0a2d81a32d8)
+
+
+
+</details>
+
+> By executing this SQL query, I aimed to retrieve all available information regarding the login attempts during the specified period. The query consisted of a ``WHERE`` clause that utilized the greater than or equal to ``(>=)`` and less than or equal to ``(<=)`` operators to encompass the dates May 8 and May 9, 2022.
+
+> The purpose of this query was to gather a comprehensive overview of the login activity on the specific days of interest, enabling a closer examination of the events leading up to and including the suspicious incident. By reviewing the retrieved data, I could dive deeper into the login attempts and patterns that might aid in the investigation and resolution of the suspicious event.
+
+<br />
+<br />
+
 
 
 
