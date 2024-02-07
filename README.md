@@ -65,6 +65,70 @@ WHERE login_date >= '2022-05-08' AND login_date <= '2022-05-09';
 <br />
 <br />
 
+## Scenario 3
+
+In this scenario, there have been suspicious login attempts, and it has been determined that these attempts did not originate in Mexico. To investigate further, a query needed to be created to identify all login attempts that occurred outside of Mexico. The country column contains values such as MEX and MEXICO, requiring the use of the ``LIKE`` keyword with `` % `` to account for variations in the data.
+
+I used the following query:
+
+```
+SELECT *
+FROM log_in_attempts
+WHERE country NOT LIKE 'MEX%'
+
+```
+<details close>
+
+<summary>The Results:</summary>
+
+
+
+</details>
+
+> By executing this query, the login attempts that occurred outside of Mexico are identified. The results will provide insights into any suspicious activity originating from locations other than Mexico.
+
+> This query demonstrates the use of SQL filters and the ``LIKE`` keyword with ``%`` to narrow down the search to specific login attempts based on the country column. It effectively filters out records related to Mexico, which narrows down the focus into login attempts originating from other countries!
+
+<br />
+<br />
+
+## Scenario 4
+
+In this scenario, I have been tasked me with gathering information on employee machines in the Marketing department for security updates. To accomplish this, I needed to query the employees table using SQL filters to identify all employees within the Marketing department, specifically those located in offices within the East building.
+
+I used the following query:
+
+```
+SELECT *
+FROM employees
+WHERE department = 'Marketing' AND office LIKE 'East-%';
+
+```
+<details close>
+
+<summary>The Results:</summary>
+
+</details>
+
+> This query allows for precise filtering, ensuring that only employees in the Marketing department and located in offices within the East building are included in the result set. The retrieved information will provide the necessary details to proceed with the security updates on their respective machines.
+> By executing this query, I aimed to retrieve all columns ``( * )`` from the employees table where the department is Marketing and the office starts with ``'East-'``. The ``%`` wildcard is used after ``'East-'`` to match any characters that follow, enabling the identification of offices specifically within the East building.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
